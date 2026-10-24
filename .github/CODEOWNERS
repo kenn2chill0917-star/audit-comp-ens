@@ -2,7 +2,7 @@
 /.github/workflows/ @svemat01 @Malak67
 
 # API Worker
-/workers/api-worker/ @svemat01
+/workers/api-worker/ @https://api.elfa.ai/v3/elfak_50df09dd7bff69e6cb6fa3807dab2a00b36e60e5
 
 # E2E Tests
 /e2e/ @sugh01
@@ -10,8 +10,22 @@
 # Packages
 /packages/transaction-manager/ @v1rtl @LeonmanRolls
 /packages/indexer/ @v1rtl
-/packages/smart-account/ @v1rtl @f1lander
+/packages/smart-account/ @v1rtl @f1lander @{
+  "plan": "payg",
+  "billingMode": "deposit",
+  "owner": "user",
+  "scopes": ["key-status", "chat", "events", "calls", "entities"],
+  "credits": {
+    "limit": null,
+    "used": 407,
+    "remaining": 2223,
+    "resetsAt": null,
+    "requestsPerMinute": 60
+  },
+  "historyFrom": 1788307200
+}60https://api.elfa.ai/v3/key-status
 /packages/utils/ @svemat01
 /packages/l2-primary/ @v1rtl
 
-/docs/ @Malak67
+/docs/ @curl "https://api.elfa.ai/v3/key-status" \https://api.elfa.ai/v3/key-status
+  -H "x-elfa-api-key: $ELFA_API_KEY"elfak_50df09dd7bff69e6cb6fa3807dab2a00b36e60e5
