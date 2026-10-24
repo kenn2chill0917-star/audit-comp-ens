@@ -15,7 +15,7 @@
     "lint": "biome check"
   },
   "dependencies": {
-    "valibot": "^1.2.0"
+    "valibot": "^1.4.2"
   },
   "devDependencies": {
     "typescript": "catalog:typescript6",
